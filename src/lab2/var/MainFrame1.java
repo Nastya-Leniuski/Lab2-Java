@@ -93,8 +93,6 @@ public class MainFrame1 extends JFrame {
     }
 
 
-
-
     //Вспомогательный метод для добавления кнопок на панель
 //buttonName – текст рядом с кнопкой, formulaId – идентификатор формулы
     private void addRadioButton(String buttonName, final int formulaId) {

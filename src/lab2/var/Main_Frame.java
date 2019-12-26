@@ -9,7 +9,6 @@ import java.text.AttributedCharacterIterator;
 
 import static java.lang.Math.*;
 
-
 public class Main_Frame extends JFrame {
     private static final int width = 1300;
     private static final int height = 500;
@@ -46,6 +45,7 @@ public class Main_Frame extends JFrame {
         }
         return sin(log(y)+ sin(Math.PI*pow(y,2)))* pow(pow(x,2)+ sin(z)+exp(cos(z)),1/4);
     }
+
     public Double formula2(Double x, Double y, Double z)
     {
         if (y == -1)	{
@@ -106,7 +106,6 @@ public class Main_Frame extends JFrame {
         Toolkit kit = Toolkit.getDefaultToolkit();
         setLocation((kit.getScreenSize().width-width)/2,
                 (kit.getScreenSize().height-height)/2);
-
 
 
         Box picture = Box.createHorizontalBox();                    // область с картинкой
@@ -215,8 +214,6 @@ public class Main_Frame extends JFrame {
         radioMemoryButtons.setSelected(radioMemoryButtons.getElements().nextElement().getModel(), true);
         hBoxMemoryType.add(Box.createHorizontalGlue());
 
-
-
         Box memory_result=Box.createHorizontalBox();
         memory_result.add(Box.createHorizontalGlue());
         JButton MC=new JButton("MC");
@@ -260,8 +257,6 @@ public class Main_Frame extends JFrame {
         memory_result.add(M_plus);
         memory_result.add(Box.createHorizontalGlue());
 
-
-
         Box contentBox = Box.createVerticalBox();
         contentBox.add(Box.createVerticalGlue());
         contentBox.add(picture);
@@ -278,11 +273,7 @@ public class Main_Frame extends JFrame {
         contentBox.add(Box.createVerticalGlue());
         contentBox.add(memory_result);
 
-
         getContentPane().add(contentBox, BorderLayout.CENTER);
-
-
-
 
     }
 
